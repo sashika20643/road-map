@@ -23,6 +23,11 @@ body{
     transform-origin:50% 50%;
     transform-box: fill-box;
 }
+.popup-btn:hover .Rectangle{
+
+    fill: rgb(137, 248, 152);
+
+}
 .popup-box {
   max-width: 100vw;
   padding: 70px;
