@@ -36,10 +36,10 @@ tl1.from(`#${array1[31]},#${array1[32]},#${array1[33]},#${array1[34]},#${array1[
 tl1.from(`#${array1[36]},#${array1[36]},#${array1[37]},#${array1[38]},#${array1[39]}`, {y:1500, duration: 1});
 tl1.from(`#${array1[40]},#${array1[41]},#${array1[42]}`, {scale:0, duration: .3});
 
-tl1.from(`#${array1[43]}`, {y:-500,x:-1*xd, duration: 1});
+tl1.from(`#${array1[43]}`, {y:-1500,x:-1*xd, duration: 1});
 tl1.from(`#${array1[44]}`, {y:1500,x:xd, duration: 1});
-tl1.from(`#${array1[45]}`, {y:-500,x:xd, duration: 1});
+tl1.from(`#${array1[45]}`, {y:-1500,x:xd, duration: 1});
 tl1.from(`#${array1[46]},#${array1[47]},#${array1[48]},#${array1[49]},#${array1[50]}`, {opacity:0, duration: 1});
-tl1.from(`#${array1[51]},#${array1[52]}`, {y:-500,x:xd*-1, duration: 1});
+tl1.from(`#${array1[51]},#${array1[52]}`, {y:-1500,x:xd*-1,opacity:0, duration: 1});
 tl1.from(`#${array1[53]}`, {y:-1500, opacity:0,duration: 1,});
-tl1.from(`#${array1[54]},#${array1[55]}`, {y:-500,x:xd, duration: 1});
+tl1.from(`#${array1[54]},#${array1[55]}`, {y:-1500,x:xd, duration: 1});
