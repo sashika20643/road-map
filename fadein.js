@@ -40,8 +40,11 @@ var data = {'strcterx':{'introduction':'Structured programming is a programming 
 $(document).ready(function() {
     $('.popup-btn').click(function() {
 var id=this.id;
-$(document.body).on('touchmove',window.scroll({top: 100,left: 100,behavior: 'smooth'})); // for mobile
-$(window).on('scroll', window.scroll({top: 100,left: 100,behavior: 'smooth'}));
+$(document.body).on('touchmove',window.scroll({top: 0,left: 0,behavior: 'smooth'})); // for mobile
+$(window).on('scroll', window.scroll({top: 0,left: 0,behavior: 'smooth'}));
+
+
+
     $('#title').text(data[id].title);
     $('#description').text(data[id].introduction);
    
