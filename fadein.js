@@ -31,17 +31,22 @@ var data = {'strcterx':{'introduction':'Structured programming is a programming 
 
 }
 
-// function onScroll(){ 
-//   if( $(window).scrollTop() + window.innerHeight >= document.body.scrollHeight ) { 
-//       track_page++; 
-//       load_contents(track_page); 
-//   }
-// }
+function onScroll(){ 
+  $('window').on('touchmove', function(event) {
+    event.preventDefault();
+    window.scroll({top: 0,left: 0,behavior: 'smooth'})
+});
+ 
+  window.scroll({top: 0,left: 0,behavior: 'smooth'})
+
+}
 $(document).ready(function() {
     $('.popup-btn').click(function() {
 var id=this.id;
-$(document.body).on('touchmove',window.scroll({top: 0,left: 0,behavior: 'smooth'})); // for mobile
-$(window).on('scroll', window.scroll({top: 0,left: 0,behavior: 'smooth'}));
+$('#cont').css('width', '100vw');
+$('#cont').css('overflow-y', 'hidden');
+$(document.body).on('touchmove',onScroll()); // for mobile
+$(window).on('scroll',onScroll());
 
 
 
@@ -71,6 +76,8 @@ $(window).on('scroll', window.scroll({top: 0,left: 0,behavior: 'smooth'}));
     });
   
     $('.popup-close').click(function(e) {
+      $('#cont').css('width', 'max-content');
+$('#cont').css('overflow-y', 'scroll');
       $('.popup-wrap').fadeOut(500);
       $('.popup-box').removeClass('transform-in').addClass('transform-out');
   
